@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Units</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* em - rem - & - vw - vh */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+
+        .background {
+            background: url(./images/BG-Okyanus.jpg) center center no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            position: relative;
+            left: 2rem;
+        }
+        p {
+            font-size: 1.4rem;
+            padding: 9rem 2rem;
+            letter-spacing: 1px;
+            align-items: center;
+            /* padding: 1.5em; */
+            /*  padding kendi elementimizin font sizeina gore  */
+        }
+        @media(max-width : 500px) {
+            h1 {
+                margin-bottom: 0.4rem;
+                position: relative;
+                left: 1rem;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="background">
+        <h1 id="article">Şu an, gücün kaynağındayız.</h1>
+        <p>Yakında buralardayız. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, hic?</p>
+    </div>
+
+    
+       
+
+    <!-- <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, sequi unde aspernatur eaque ab repellat
+            doloremque excepturi dolorem et quia ullam, dolor veniam magni beatae saepe delectus rerum harum laborum.
+            Illo, quod. Voluptatibus voluptate consequuntur quaerat quas minima corporis harum.
+        </p>
+    </div> -->
+
+</body>
+
+</html>

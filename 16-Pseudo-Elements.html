@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+
+        .para1 {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+
+        }
+        /* }
+        .para1::first-letter {
+            color: red;
+        }
+
+        .para1::first-line {
+            color: green;
+            
+        } */
+
+        .para1::after {
+            content: url("https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png");
+            color: blue;
+        }
+        .para1::before {
+            content: "okumak icin devam et:";
+        }
+    </style>
+
+</head>
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam, laboriosam facere iusto repellendus laudantium consequatur rem rerum ratione voluptas dolorem placeat tempore, tenetur voluptatum quod pariatur sapiente nobis illo omnis culpa temporibus nam soluta! Deleniti accusamus facere earum pariatur omnis, nesciunt consectetur doloremque? Alias, quaerat magnam voluptates eos quibusdam cum totam modi sint id tempora omnis voluptatibus at, accusamus qui quisquam autem recusandae expedita impedit, blanditiis sunt quasi pariatur fugiat ducimus ex! Atque natus alias voluptatem, dolorum, ipsam, itaque quia consectetur amet architecto sapiente blanditiis laboriosam odit repudiandae soluta ipsum incidunt quaerat nemo. Id, eveniet expedita. Numquam, enim saepe?</p>
+
+    
+</body>
+</html>

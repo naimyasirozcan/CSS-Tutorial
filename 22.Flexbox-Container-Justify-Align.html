@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            min-height: 600px;
+            /* gerekirse icerige gore uzayan yukseklik ayari */
+            background-color: blue;
+
+            /* flex-direction: column; */
+            /* satir-kolon kodu, main axisi belirler. */
+
+            /* flex direction column (kolon) oldugunda asagidaki kodlar (justify-content - align-items) */
+
+
+            justify-content: center;
+            /* sola yasli siralama */
+
+
+            /* justify-content: flex-end; */
+            /* saga yasli siralama */
+
+
+            /* justify-content: center; */
+            /* merkezde bosluksuz */
+
+
+            /* justify-content: space-between; */
+            /* sola saga yaslamali*/
+
+
+            /* justify-content: space-around; */
+            /* yari bosluklu tam bosluklu */
+
+
+            /* justify-content: space-evenly; */
+            /* tam ve esit bosluklu */
+
+
+            /* align-items: center; */
+            /* asagidan yukari ortada */
+
+            /* align-items: flex-start; */
+            /* yukari yasli siralama */
+
+            /* align-items: flex-end; */
+            /* asagi yasli siralama */
+
+            flex-wrap: wrap;
+            /* satira/kolona otomatik sigdirmayi kapatir-acar */
+            
+        }
+        .box {
+            border: 1px solid black;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background: #f2f2f2;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Flex Container -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati.f</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati.f</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati.f</p>
+        </div>
+        <div class="box">
+            <h1>Article 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati.f</p>
+        </div>
+        <div class="box">
+            <h1>Article 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, obcaecati.f</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

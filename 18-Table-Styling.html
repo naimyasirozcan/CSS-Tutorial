@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+</head>
+
+<style>
+
+    * {
+        font-family: sans-serif;
+    }
+    table, td, tr, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+    th, td {
+        padding: 20px 10px;
+    }
+    thead tr {
+        background: green;
+    }
+    tbody tr {
+        
+        text-align: center;
+    }
+    tbody tr:nth-child(2n) {
+        background: cyan;
+
+    }
+
+    tbody tr:nth-child(n+2) {
+        background: palevioletred;
+    }
+
+    tbody tr:hover {
+        color: white;
+    }
+</style>
+
+<body>
+    <table class="employees">
+        <thead>
+            <tr>
+                <th>ad</th>
+                <th>departman</th>
+                <th>maas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td>mustafa</td>
+                <td>web</td>
+                <td>20000</td>
+
+            </tr>
+            <tr>
+                <td>yasir</td>
+                <td>web develope + art design (uiux)</td>
+                <td>48600$</td>
+
+            </tr>
+            <tr>
+                <td>ozge</td>
+                <td>insan kaynaklari ve organizasyon</td>
+                <td>25000$</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

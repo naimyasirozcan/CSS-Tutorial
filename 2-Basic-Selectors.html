@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    
+    <style>
+
+        /* h1'leri ya da p'leri sec */
+
+        /* h1 {
+            color: red;
+            background: rgb(43, 28, 177)
+        } */
+
+        /* p {
+            color: rgb(21, 4, 60);
+        } */
+
+/* --------------------------------------------------------------------- */
+
+        /* tum h1 ve p'leri ayni anda sec */
+
+        /* h1, p {
+            color: red;
+            background: midnightblue;
+        } */
+
+/* ---------------------------------------------------------------------- */
+
+        /* ID'SI LOGO OLANLARI SEC */
+
+        /* #logo {
+            color: red;
+        } */
+
+/* ----------------------------------------------------------------------- */
+        /* class'i info olanlari sec */
+
+        /* .info { color: midnightblue;} */
+
+/* ----------------------------------------------------------------------- */
+
+    /* ID'SI LOGO OLAN ILE CLASSI INFOL OLANI AYRI SECERKEN VIRGUL KOY */
+
+    /* #logo,.lead,.info {
+        color: brown;
+        background: pink;
+    } */
+
+/* ------------------------------------------------------------------------ */
+    /* HEM ID HEM DE CLASSA GORE */
+
+    /* #para1.info {
+        color: burlywood;
+    } */
+
+/* ------------------------------------------------------------------- */
+    /* LINK ALTYAZISI KALDIRMA */
+
+    a {
+        text-decoration: none;
+    }
+
+/* --------------------------------------------------------------------- */
+    /* HIYERARSIK STILLEME / PARENT - CHILD ELEMENT */ 
+
+    ul li a {
+
+        color: darkmagenta
+    }
+
+    /* ---------------------------------------------------------------- */
+        /* Class altindaki element */
+    .info span{
+
+        color: lightgreen;
+        background: black;
+    }
+
+
+    .info .primary {
+        color: darkred;
+    }
+
+    </style>
+</head>
+<body>
+
+    <header>
+     <h1>Header 1</h1>
+     <h1 id="logo">logo</h1>
+
+     <ul>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Service</a></li>
+     </ul>
+
+    </header>
+
+     <h1>Header 2</h1>
+
+     <p id="anaparagraf" class="lead info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima suscipit cum in. Fugit ut veniam perspiciatis voluptatum ad facere.</p>
+     <p id="para1" class="info">Lorem ipsum <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Incidunt asperiores possimus iusto totam tempora libero quis quo autem expedita sit, nesciunt, vero vel veritatis magnam hic! Repellendus esse vitae reiciendis dolore. Veritatis accusamus labore, illo corrupti alias animi! Veritatis cum illum asperiores iusto quidem voluptatem dolor quod modi molestiae, blanditiis doloribus autem repellendus debitis qui corporis sint error possimus et. Adipisci cumque quisquam magni quos aspernatur quidem unde recusandae. Laborum minus repudiandae, fuga deleniti odit maxime suscipit? Libero eos, et eum facere consequatur repellendus doloribus illo minima soluta. Dicta, corporis!</p>
+     <p id="para2" class="info">Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Error sint optio veritatis quisquam inventore, voluptatum sunt enim eaque, non cupiditate quibusdam recusandae, commodi soluta aliquid in voluptate vitae unde nam.</p>
+     <p id="para3" class="test-p">test paragrafi</p>
+
+     <footer>
+         <a href="#">Home</a>
+     </footer>
+
+    
+</body>
+</html>
